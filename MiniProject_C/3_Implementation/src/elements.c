@@ -1548,6 +1548,7 @@ int info1(char* el) {
 	int flag=0;
 	newScreen();
 	char ele[20];
+	table();
 //	printf("\033[32mENTER THE ELEMENT'S NAME : \033[0m");
 //	strcpy(ele,el);
 //	scanf("%s",ele);
