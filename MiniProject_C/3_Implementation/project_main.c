@@ -4,6 +4,24 @@
 #include <ctype.h>
 #include <elements.h>
 
+void search();
+void quit();
+int main() {
+	newScreen();
+	printf("\033[34m1 -> EXPLORE\033[0m\n");
+	printf("\033[34m2 -> QUIT\033[0m\n\n\n\n");
+	int choice1;
+	printf("\033[32mYOUR CHOICE : \033[0m");
+	scanf("%d",&choice1);
+	table();
+	if (choice1==1){
+		search();
+	} else if (choice1==2){
+		quit();
+	} else {
+		main();
+	}
+}
 void quit() {
 	newScreen();
 	char ans[5];
@@ -54,19 +72,4 @@ void search() {
 		search();
 	}
 }
-int main() {
-	newScreen();
-	printf("\033[34m1 -> EXPLORE\033[0m\n");
-	printf("\033[34m2 -> QUIT\033[0m\n\n\n\n");
-	int choice1;
-	printf("\033[32mYOUR CHOICE : \033[0m");
-	scanf("%d",&choice1);
-	table();
-	if (choice1==1){
-		search();
-	} else if (choice1==2){
-		quit();
-	} else {
-		main();
-	}
-}
+
