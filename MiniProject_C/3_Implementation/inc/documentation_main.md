@@ -1,2 +1,2 @@
-@mainpage Calculator Application by Bharath G
-@subpage calculator_operations.h
+@mainpage PeriodicTable by Denil Baicil
+@subpage elements.h
