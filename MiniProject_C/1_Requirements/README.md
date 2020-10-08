@@ -1,7 +1,13 @@
 # Requirements
 
-* Capture all the requirements wrt system, module, interface, integration, testing, Functional and Non-functional
-* Captures Basic Planning of the project through - Sample Gantt Chart attached
+Tools used:
+ CodeBlocks IDE 
+ C Programming Language.
+ MS Word
 
-* Tools: MS Excel, MS word or Similar
+Header Files used :
+ stdio.h -  Used to perform input and output operations in C
+ stdlib.h -  Perform standard utility 
+ string.h - Perform string manipulation like strcmp, strlen etc
+ elements.h - contains all the information about the elements in the periodic table,it is programmer made header file that is added to the program
 
