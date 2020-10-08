@@ -55,7 +55,7 @@ int main() {
 	int choice1;
 	printf("\033[32mYOUR CHOICE : \033[0m");
 	scanf("%d",&choice1);
-	table();
+	//table();
 	if (choice1==1){
 		search();
 	} else if (choice1==2){
