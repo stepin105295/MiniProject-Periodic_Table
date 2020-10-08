@@ -43,7 +43,7 @@ int main() {
 
 /* Write all the test functions */ 
 void test_info1(void) {
-  CU_ASSERT(0 == info1("HYDROGEN"));
+  CU_ASSERT(1 == info1("HYDROGEN"));
   
   /* Dummy fail*/
 /*  CU_ASSERT(1500 == add(750, 7500)); */
