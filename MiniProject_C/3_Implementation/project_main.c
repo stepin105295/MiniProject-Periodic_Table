@@ -1,3 +1,9 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+#include <elements.h>
+
 void quit() {
 	newScreen();
 	char ans[5];
