@@ -1570,6 +1570,7 @@ int info1(char* el) {
 			flag=1;
 			break;
 		}
+		flag=2;
 	}
 	return flag;
 	//again();
