@@ -1552,7 +1552,7 @@ int info1(char* el) {
 //	printf("\033[32mENTER THE ELEMENT'S NAME : \033[0m");
 //	strcpy(ele,el);
 //	scanf("%s",ele);
-	for (i=0; i<2; i++) {
+	for (i=0; i<118; i++) {
 		if (strcmp(atom[i].name,el)==0){
 			printf("\033[34m\n\n\tELEMENT : %s\033[0m\n",atom[i].name);
 			printf("\033[34m\n\n\tSYMBOL : %s\033[0m\n",atom[i].symbol);
@@ -1572,9 +1572,6 @@ int info1(char* el) {
 			flag=1;
 			break;
 		}
-		printf("%s",el);
-		printf("%s",atom[i].name);
-		flag=2;
 	}
 	return flag;
 	//again();
@@ -1584,6 +1581,7 @@ int info2(char* sy) {
 	newScreen();
 	int flag=0;
 	char sym[1];
+	table();
 //	printf("\033[32mENTER THE ELEMENT'S SYMBOL : \033[0m");
 	strcpy(sym,sy);
 //	scanf("%s",sym);
@@ -1615,10 +1613,11 @@ int info3(int an) {
 	newScreen();
 	int flag=0;
 	int atn;
+	table();
 //	printf("\033[32mENTER THE ELEMENT'S ATOMIC NUMBER : \033[0m");
 	atn=an;
 //	scanf("%d",&atn);
-	for (i=0; i<10; i++) {
+	for (i=0; i<118; i++) {
 		if (atom[i].atomicnum==atn){
 			printf("\033[34m\n\n\tELEMENT : %s\033[0m\n",atom[i].name);
 			printf("\033[34m\n\n\tSYMBOL : %s\033[0m\n",atom[i].symbol);
@@ -1637,9 +1636,6 @@ int info3(int an) {
 			flag=1;
 			break;
 		}
-		flag=2;
-		printf("%d",atn);
-		printf("%d",atom[i].atomicnum);
 	}
 	return flag;
 	//again();
@@ -1649,6 +1645,7 @@ int info4(int awt) {
 	newScreen();
 	int flag=0;
 	int atwt;
+	table();
 //	printf("\033[32mENTER THE ELEMENT'S ATOMIC WEIGHT : \033[0m");
 	atwt=awt;
 //	scanf("%f",&atwt);
