@@ -50,21 +50,21 @@ void test_info1(void) {
 }
 
 void test_info2(void) {
-  CU_ASSERT(0 == info2("O"));
+  CU_ASSERT(1 == info2("O"));
   
   /* Dummy fail*/
 /*  CU_ASSERT(1 == subtract(1000, 900));  */
 }
 
 void test_info3(void) {
-  CU_ASSERT(0 == info3(1));
+  CU_ASSERT(1 == info3(1));
   
   /* Dummy fail*/
 /*  CU_ASSERT(2 == multiply(2, 5));  */
 }
 
 void test_info4(void) {
-  CU_ASSERT(0 == info4(4));
+  CU_ASSERT(1 == info4(4));
   
   /* Dummy fail*/
 /*  CU_ASSERT(3 == divide(2, 2)); */
