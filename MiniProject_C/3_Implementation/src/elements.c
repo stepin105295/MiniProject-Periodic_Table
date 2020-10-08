@@ -1501,14 +1501,14 @@ atom[108].atomicwt=268.00;
 
 int i;
 
-void search();
+//void search();
 
 void clrscr() {
     system("@cls||clear");
 }
 
 void newScreen() {
-	clrscr();
+	//clrscr();
 	int width = 132;
 	char str[] = "\033[31;1;51;4mPERIODIC TABLE\033[0m\n";
 	int length = sizeof(str) - 1;
@@ -1545,6 +1545,7 @@ void again() {
 }
 */
 int info1(char* el) {
+	int flag=0;
 	newScreen();
 	char ele[20];
 //	printf("\033[32mENTER THE ELEMENT'S NAME : \033[0m");
@@ -1566,16 +1567,17 @@ int info1(char* el) {
 			printf("\033[34m\n\n\tDENSITY : %f kgm^-3\033[0m\n",atom[i].density);
 			printf("\033[34m\n\n\tMELTING POINT : %f K\033[0m\n",atom[i].meltingp);
 			printf("\033[34m\n\n\tBOILING POINT : %f K\033[0m\n",atom[i].boilingp);
-			return 1;
+			flag=1;
 			break;
 		}
 	}
-	return 0;
-	again();
+	return flag;
+	//again();
 }
 
 int info2(char* sy) {
 	newScreen();
+	int flag=0;
 	char sym[1];
 //	printf("\033[32mENTER THE ELEMENT'S SYMBOL : \033[0m");
 	strcpy(sym,sy);
@@ -1596,16 +1598,17 @@ int info2(char* sy) {
 			printf("\033[34m\n\n\tDENSITY : %f kgm^-3\033[0m\n",atom[i].density);
 			printf("\033[34m\n\n\tMELTING POINT : %f K\033[0m\n",atom[i].meltingp);
 			printf("\033[34m\n\n\tBOILING POINT : %f K\033[0m\n",atom[i].boilingp);
-			return 1;
+			flag=1;
 			break;
 		}
 	}
-	return 0;
-	again();
+	return flag;
+	//again();
 }
 
 int info3(int an) {
 	newScreen();
+	int flag=0;
 	int atn;
 //	printf("\033[32mENTER THE ELEMENT'S ATOMIC NUMBER : \033[0m");
 	atn=an;
@@ -1626,16 +1629,17 @@ int info3(int an) {
 			printf("\033[34m\n\n\tDENSITY : %f kgm^-3\033[0m\n",atom[i].density);
 			printf("\033[34m\n\n\tMELTING POINT : %f K\033[0m\n",atom[i].meltingp);
 			printf("\033[34m\n\n\tBOILING POINT : %f K\033[0m\n",atom[i].boilingp);
-			return 1;
+			flag=1;
 			break;
 		}
 	}
-	return 0;
-	again();
+	return flag;
+	//again();
 }
 
 int info4(int awt) {
 	newScreen();
+	int flag=0;
 	int atwt;
 //	printf("\033[32mENTER THE ELEMENT'S ATOMIC WEIGHT : \033[0m");
 	atwt=awt;
@@ -1656,12 +1660,12 @@ int info4(int awt) {
 			printf("\033[34m\n\n\tDENSITY : %f kgm^-3\033[0m\n",atom[i].density);
 			printf("\033[34m\n\n\tMELTING POINT : %f K\033[0m\n",atom[i].meltingp);
 			printf("\033[34m\n\n\tBOILING POINT : %f K\033[0m\n",atom[i].boilingp);
-			return 1;
+			flag=1;
 			break;
 		}
 	}
-	return 0;
-	again();
+	return flag;
+	//again();
 }
 /*
 void search() {
