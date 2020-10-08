@@ -10,7 +10,7 @@ src/elements.c\
 
 # All test source files
 TEST_SRC = src/elements.c\
-test/test_calculator_operations.c
+test/test_PeriodicTable.c
 
 TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
 
