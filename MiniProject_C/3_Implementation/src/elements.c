@@ -1617,7 +1617,7 @@ int info3(int an) {
 //	printf("\033[32mENTER THE ELEMENT'S ATOMIC NUMBER : \033[0m");
 	atn=an;
 //	scanf("%d",&atn);
-	for (i=0; i<118; i++) {
+	for (i=0; i<10; i++) {
 		if (atom[i].atomicnum==atn){
 			printf("\033[34m\n\n\tELEMENT : %s\033[0m\n",atom[i].name);
 			printf("\033[34m\n\n\tSYMBOL : %s\033[0m\n",atom[i].symbol);
@@ -1636,6 +1636,9 @@ int info3(int an) {
 			flag=1;
 			break;
 		}
+		flag=2;
+		printf("%d",atn);
+		printf("%d",atom[i].atomicnum);
 	}
 	return flag;
 	//again();
