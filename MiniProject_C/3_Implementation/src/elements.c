@@ -25,7 +25,7 @@ float boilingp;
 atom[118];
 
 
-extern void table()
+void table()
 {
 
 strcpy(atom[0].name,"HYDROGEN");
