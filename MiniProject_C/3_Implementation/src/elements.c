@@ -60,7 +60,7 @@ int info1(char* el) {
 			printf("\033[34m\n\n\tELEMENT : %s\033[0m\n",atom[i].name);
 			printf("\033[34m\n\n\tSYMBOL : %s\033[0m\n",atom[i].symbol);
 			printf("\033[34m\n\n\tATOMIC NUMBER : %d\033[0m\n",atom[i].atomicnum);
-			printf("\033[34m\n\n\tATOMIC WEIGHT : %f\033[0m\n",atom[i].atomicwt);
+			printf("\033[34m\n\n\tATOMIC WEIGHT : %d\033[0m\n",atom[i].atomicwt);
 			printf("\033[34m\n\n\tCRYSTAL STRUCTURE : %s\033[0m\n",atom[i].crystruct);
 			printf("\033[34m\n\n\tATOMIC RADIUS : %f pm\033[0m\n",atom[i].atomicrad);
 			printf("\033[34m\n\n\tPRINCIPAL OXIDATION STATES : %s\033[0m\n",atom[i].oxidnno);
@@ -90,7 +90,7 @@ int info2(char* sy) {
 			printf("\033[34m\n\n\tELEMENT : %s\033[0m\n",atom[i].name);
 			printf("\033[34m\n\n\tSYMBOL : %s\033[0m\n",atom[i].symbol);
 			printf("\033[34m\n\n\tATOMIC NUMBER : %d\033[0m\n",atom[i].atomicnum);
-			printf("\033[34m\n\n\tATOMIC WEIGHT : %f\033[0m\n",atom[i].atomicwt);
+			printf("\033[34m\n\n\tATOMIC WEIGHT : %d\033[0m\n",atom[i].atomicwt);
 			printf("\033[34m\n\n\tCRYSTAL STRUCTURE : %s\033[0m\n",atom[i].crystruct);
 			printf("\033[34m\n\n\tATOMIC RADIUS : %f pm\033[0m\n",atom[i].atomicrad);
 			printf("\033[34m\n\n\tPRINCIPAL OXIDATION STATES : %s\033[0m\n",atom[i].oxidnno);
@@ -120,7 +120,7 @@ int info3(int an) {
 			printf("\033[34m\n\n\tELEMENT : %s\033[0m\n",atom[i].name);
 			printf("\033[34m\n\n\tSYMBOL : %s\033[0m\n",atom[i].symbol);
 			printf("\033[34m\n\n\tATOMIC NUMBER : %d\033[0m\n",atom[i].atomicnum);
-			printf("\033[34m\n\n\tATOMIC WEIGHT : %f\033[0m\n",atom[i].atomicwt);
+			printf("\033[34m\n\n\tATOMIC WEIGHT : %d\033[0m\n",atom[i].atomicwt);
 			printf("\033[34m\n\n\tCRYSTAL STRUCTURE : %s\033[0m\n",atom[i].crystruct);
 			printf("\033[34m\n\n\tATOMIC RADIUS : %f pm\033[0m\n",atom[i].atomicrad);
 			printf("\033[34m\n\n\tPRINCIPAL OXIDATION STATES : %s\033[0m\n",atom[i].oxidnno);
@@ -150,7 +150,7 @@ int info4(int awt) {
 			printf("\033[34m\n\n\tELEMENT : %s\033[0m\n",atom[i].name);
 			printf("\033[34m\n\n\tSYMBOL : %s\033[0m\n",atom[i].symbol);
 			printf("\033[34m\n\n\tATOMIC NUMBER : %d\033[0m\n",atom[i].atomicnum);
-			printf("\033[34m\n\n\tATOMIC WEIGHT : %f\033[0m\n",atom[i].atomicwt);
+			printf("\033[34m\n\n\tATOMIC WEIGHT : %d\033[0m\n",atom[i].atomicwt);
 			printf("\033[34m\n\n\tCRYSTAL STRUCTURE : %s\033[0m\n",atom[i].crystruct);
 			printf("\033[34m\n\n\tATOMIC RADIUS : %f pm\033[0m\n",atom[i].atomicrad);
 			printf("\033[34m\n\n\tPRINCIPAL OXIDATION STATES : %s\033[0m\n",atom[i].oxidnno);
