@@ -1551,7 +1551,7 @@ int info1(char* el) {
 //	printf("\033[32mENTER THE ELEMENT'S NAME : \033[0m");
 //	strcpy(ele,el);
 //	scanf("%s",ele);
-	for (i=0; i<118; i++) {
+	for (i=0; i<2; i++) {
 		if (strcmp(atom[i].name,el)==0){
 			printf("\033[34m\n\n\tELEMENT : %s\033[0m\n",atom[i].name);
 			printf("\033[34m\n\n\tSYMBOL : %s\033[0m\n",atom[i].symbol);
@@ -1567,9 +1567,12 @@ int info1(char* el) {
 			printf("\033[34m\n\n\tDENSITY : %f kgm^-3\033[0m\n",atom[i].density);
 			printf("\033[34m\n\n\tMELTING POINT : %f K\033[0m\n",atom[i].meltingp);
 			printf("\033[34m\n\n\tBOILING POINT : %f K\033[0m\n",atom[i].boilingp);
+			
 			flag=1;
 			break;
 		}
+		printf("%s",el);
+		printf("%s",atom[i].name);
 		flag=2;
 	}
 	return flag;
